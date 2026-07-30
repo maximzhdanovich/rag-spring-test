@@ -56,7 +56,7 @@ public class CommandLineRunnerImpl implements CommandLineRunner {
   }
 
   private void deleteTestEntityById(Long id) {
-    TestEntity testEntity = testEntityCrudRepository.findById(id).get();
+    TestEntity testEntity = testEntityCrudRepository.findById(id + 5).get();
     testEntityCrudRepository.delete(testEntity);
 
   }
