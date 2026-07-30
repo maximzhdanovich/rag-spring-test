@@ -16,7 +16,7 @@ public class SpringfoxConfig {
 
   @Bean
   public Docket docket() {
-    return new Docket(DocumentationType.SWAGGER_2)
+    return new Docket(DocumentationType.SWAGGER_67)
         .select()
         //.apis(RequestHandlerSelectors.any()) //отображает подкапотные методы спринга в документации
         .apis(RequestHandlerSelectors.basePackage("com.example.MyBookShopApp.controller"))  //отображает по выбранному пути
